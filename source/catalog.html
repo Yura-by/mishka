@@ -3,19 +3,19 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Mishka</title>
+    <title>MishkaCatalog</title>
   </head>
 
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <svg class="page-header__image"></svg>
       </a>
       <nav class="page-header__nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__href" href="catalog.html">Каталог</a>
+            <a class="main-nav__href">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__href" href="customized.html">Вязание на заказ</a>
@@ -25,7 +25,7 @@
       <form class="page-header__form form-user" method="post" action="https://echo.htmlacademy.ru">
         <p class="form-user__search">
           <label class="visually-hidden" for="form-user__input">Поиск по сайту</label>
-          <input class="form-user__input" id="form-user__input" type="search"></input>
+          <input class="form-user__input" id="form-user__input" type="search">
         </p>
         <a class="form-user__basket">Корзина: пока пуста</a>
       </form>
@@ -37,13 +37,56 @@
       <section class="catalog">
         <h2 class="visually-hidden">Перечень таваров</h2>
         <figure class="catalog__item">
-
+          <a class="catalog__link" href="#">
+            <img class="catalog__image" src="img/photo-1-mobile.jpg" alt="Зайчик попрыгайчик">
+          </a>
+          <figcaption class="catalog__description">
+            <h3 class="catalog__subtitle"><a class="catalog__link" href="#">Зайчик-попрыгайчик</a></h3>
+            <p class="catalog__text">Рост 30 см, вес 200 г</p>
+            <p class="catalog__price"><span class="catalog__space">1</span>200 руб.
+              <button class="catalog__basket" type="button"><span class="visually-hidden">Корзина</span></button>
+            </p>
+          </figcaption>
         </figure>
+        <figure class="catalog__item">
+          <a class="catalog__link" href="#">
+            <img class="catalog__image" src="img/photo-2-mobile.jpg" alt="Зайчик попрыгайчик">
+          </a>
+          <figcaption class="catalog__description">
+            <h3 class="catalog__subtitle"><a class="catalog__link" href="#">Корзинка для белья</a></h3>
+            <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
+            <p class="catalog__price">690 руб.
+              <button class="catalog__basket" type="button"><span class="visually-hidden">Корзина</span></button>
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="catalog__item">
+          <a class="catalog__link" href="#">
+            <img class="catalog__image" src="img/photo-3-mobile.jpg" alt="Зайчик попрыгайчик">
+          </a>
+          <figcaption class="catalog__description">
+            <h3 class="catalog__subtitle"><a class="catalog__link" href="#">Большая корзинка для игрушек</a></h3>
+            <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
+            <p class="catalog__price"><span class="catalog__space">1</span>500 руб.
+              <button class="catalog__basket" type="button"><span class="visually-hidden">Корзина</span></button>
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="manufacturing">
+        <h2 class="manufacturing__title">Процесс производства</h2>
+        <div class="manufacturing__window">
+          <svg class="manufacturing__play"></svg>
+        </div>
+        <p class="manufacturing__text">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a href="#" class="manufacturing__order button">Сделать заказ</a>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo" href="#">
+      <a class="page-footer__logo" href="index.html">
         <svg class="page-footer__svg"></svg>
       </a>
       <ul class="page-footer_social social-list">
@@ -55,10 +98,35 @@
         </li>
       </ul>
       <p class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
+        <span class="copyright__text">Разработано</span>
         <svg class="copyright__image"></svg>
       </p>
     </footer>
+
+    <section class="popup">
+      <h2 class="popup__titile">Добавить в корзину</h2>
+      <p class="popup__text">Выберите размер:</p>
+      <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="popup__fieldset">
+          <legend class="popup__legend"><span class="visually-hidden">Выберите размер</span></legend>
+          <div class="popup__fielset-wrap">
+            <p class="popup__item">
+              <input class="visually-hidden" id="popup__input--s" type="radio" name="size" value="s" checked>
+              <label class="popup__label" for="popup__input--s">s</label>
+            </p>
+            <p class="popup__item">
+              <input class="visually-hidden" id="popup__input--m" type="radio" name="size" value="m">
+              <label class="popup__label" for="popup__input--m">m</label>
+            </p>
+            <p class="popup__item">
+              <input class="visually-hidden" id="popup__input--l" type="radio" name="size" value="l">
+              <label class="popup__label" for="popup__input--l">l</label>
+            </p>
+          </div>
+        </fieldset>
+        <button class="popup__submit button">Добавить</button>
+      </form>
+    </section>
 
   </body>
 
