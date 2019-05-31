@@ -3,6 +3,8 @@
 
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <title>Mishka</title>
     <link href="css/style.min.css" rel="stylesheet">
   </head>
@@ -11,7 +13,11 @@
 
     <header class="page-header">
       <a class="page-header__logo">
-        <svg class="page-header__image"></svg>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width:768px)" srcset="img/mishka-logo-tablet.svg">
+          <img class="page-header__img" src="img/mishka-logo-mobile.svg" width="149px" height="72" alt="Логотип Мишка">
+        </picture>
       </a>
       <nav class="page-header__nav main-nav">
         <ul class="main-nav__list">
