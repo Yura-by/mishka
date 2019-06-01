@@ -1,3 +1,80 @@
+.page-header__top-wrap {
+  padding-top: 22px;
+  position: relative;
+}
+
+.page-header__logo {
+  display: block;
+  margin: 0 auto;
+  width: 86px;
+  height: 35px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__button {
+  @include btn-default;
+  position: absolute;
+  top: 29px;
+  left: 50%;
+  margin-left: 109px;
+  width: 21px;
+  height: 20px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__button--close {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background-color: $contrast-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    top: 8px;
+    left: -4px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    top: 8px;
+    right: -3px;
+  }
+}
+
+.page-header__button--open {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: $contrast-color;
+    top: 2px;
+    right: 1px;
+    box-shadow: 0 6px 0 0 $contrast-color, 0 12px 0 0 $contrast-color;
+  }
+}
+
 .page-header__img {
   display: block;
   width: 86px;

@@ -1,0 +1,10 @@
+.main-nav__list {
+  @include ul-default;
+  font-family: $bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.main-nav__href {
+  color: $contrast-color;
+}
