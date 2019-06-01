@@ -30,6 +30,12 @@ img {
 
 body {
   min-width: 320px;
+  margin: 0;
+  font-family: $regular;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .visually-hidden:not(:focus):not(:active),

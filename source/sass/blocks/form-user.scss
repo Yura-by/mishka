@@ -1,0 +1,42 @@
+.form-user__search {
+  @include p-default;
+}
+
+.form-user__input {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 5px 5px;
+  border: 2px solid transparent;
+}
+
+.form-user__input::placeholder {
+  font-family: $bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $contrast-color;
+}
+
+.form-user__basket {
+  font-family: $bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $contrast-color;
+}
+
+.form-user__icon-search {
+  order: -1;
+  fill: #d3d2d2;
+}
+
+.form-user__search {
+  display: flex;
+}
+
+.form-user__input:hover + .form-user__icon-search,
+.form-user__input:focus + .form-user__icon-search{
+  fill: $main-color;
+}
+
+.form-user__input:active + .form-user__icon-search {
+  fill: #d0f1ea;
+}

@@ -3,8 +3,20 @@
   font-family: $bold;
   font-size: 17px;
   line-height: 24px;
+  border-top: 1px solid $trans-color;
 }
 
 .main-nav__href {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
   color: $contrast-color;
+  box-sizing: border-box;
+  padding-top: 25px;
+  padding-bottom: 29px;
+  padding-left: 45px;
+}
+
+.main-nav__item {
+  border-bottom: 1px solid $trans-color;
 }
