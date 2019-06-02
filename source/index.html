@@ -20,7 +20,7 @@
         <a class="page-header__logo">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
-            <source media="(min-width:768px)" srcset="img/mishka-logo-tablet.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
             <img class="page-header__img" src="img/mishka-logo-mobile.svg" width="149" height="72" alt="Логотип Мишка">
           </picture>
         </a>
@@ -37,11 +37,13 @@
         </ul>
       </nav>
       <form class="page-header__form form-user" method="post" action="https://echo.htmlacademy.ru">
-        <p class="form-user__search">
-          <label class="visually-hidden" for="form-user__input">Поиск по сайту</label>
-          <input class="form-user__input" id="form-user__input" type="search" placeholder="Поиск по сайту">
-          <svg class="form-user__icon-search" width="18" height="18"><use xlink:href="#sprite-search"></use></svg>
-        </p>
+        <div class="form-user__top-wrap">
+          <p class="form-user__search">
+            <label class="form-user__label" for="form-user__input"><svg class="form-user__icon-search" aria-label="Поиск по сайту" width="18" height="18"><use xlink:href="#sprite-search"></use></svg></label>
+            <input class="form-user__input" id="form-user__input" type="search" placeholder="Поиск по сайту">
+          </p>
+        </div>
+        <p class="form-user__bottom-wrap"></p>
         <a class="form-user__basket">Корзина: пока пуста</a>
       </form>
       <p class="delivery">Бесплатная доставка по России</p>
