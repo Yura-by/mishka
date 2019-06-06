@@ -1,0 +1,34 @@
+.stock {
+  @include ul-default;
+  display: none;
+}
+
+@media (min-width: $desktop) {
+  .stock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 50%;
+    border-top: 1px solid $trans-color;
+  }
+
+  .stock__item {
+    width: 220px;
+  }
+
+  .stock__link {
+    display: block;
+    font-family: $bold;
+    line-height: 24px;
+    color: $contrast-color;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

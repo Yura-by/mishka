@@ -1,3 +1,10 @@
+.page-header {
+  background-image: url("../../img/hero-mobile.jpg");
+  background-position: left 50% bottom 133px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 .page-header__top-wrap {
   padding-top: 22px;
   padding-bottom: 23px;
@@ -82,10 +89,88 @@
   height: 35px;
 }
 
+.page-header__title {
+  font-family: $bold;
+  font-size: 27px;
+  line-height: 30px;
+  width: 260px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 122px;
+}
+
 @media (min-width: $tablet) {
   .page-header__img {
     width: 113px;
     height: 46px;
+  }
+
+  .page-header__logo {
+    width: 113px;
+    height: 46px;
+    margin-left: 0;
+    margin-right: 208px;
+  }
+
+  .page-header__button {
+    display: none;
+  }
+
+  .page-header__grid-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page-header__form {
+    order: 1;
+  }
+
+  .page-header__nav {
+    order: 2;
+  }
+
+  .page-header__delivery {
+    order: 3;
+  }
+
+  .page-header__top-wrap {
+    width: 48%;
+    border-bottom: 1px solid $trans-color;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .page-header__form {
+    width: 52%;
+    border-bottom: 1px solid $trans-color;
+  }
+
+  .page-header__title  {
+    font-size: 43px;
+    line-height: 50px;
+    width: 600px;
+    margin-top: 82px;
+    margin-bottom: 373px;
+  }
+
+  .page-header {
+    background-image: url("../../img/hero-desktop.jpg");
+    background-position: left 50% bottom 11px;
+  }
+
+  .page-header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    left: 0px;
+    bottom: 0;
+    background-image: url("../../img/zigzag-line-desktop.svg");
+    background-repeat: repeat-x;
+    background-position: bottom -1px left 0;
   }
 }
 
@@ -93,5 +178,35 @@
   .page-header__img {
     width: 149px;
     height: 72px;
+  }
+
+  .page-header__logo {
+    width: 149px;
+    height: 72px;
+    margin: 0;
+  }
+
+  .page-header__top-wrap {
+    width: 149px;
+    border-bottom: none;
+    order: 1;
+  }
+
+  .page-header__nav {
+    order: 0;
+  }
+
+  .page-header__form {
+    order: 2;
+    width: 400px;
+    border-bottom: none;
+  }
+
+  .page-header__stock {
+    order: 3;
+  }
+
+  .page-header__delivery {
+    order: 4;
   }
 }

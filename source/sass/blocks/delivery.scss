@@ -1,3 +1,22 @@
 .delivery {
   @include p-default;
+  display: none;
+  line-height: 24px;
+  width: 260px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet) {
+  .delivery {
+    display: block;
+    padding-left: 29px;
+    padding-top: 17px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .delivery {
+    width: 50%;
+    border-top: 1px solid $trans-color;
+  }
 }

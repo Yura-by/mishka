@@ -1,0 +1,65 @@
+.category-list {
+  @include ul-default;
+}
+
+.category-list__link {
+  font-family: $bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: $paper-color;
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-list__item {
+  background-color: $main-color;
+}
+
+.category-list__item--toys {
+  background-color: $chapters-color;
+}
+
+.category-list__icon {
+  fill: #3bb09d;
+}
+
+.category-list__link:hover .category-list__icon,
+.category-list__link:focus .category-list__icon  {
+  fill: #29a592;
+}
+
+.category-list__link:active .category-list__icon {
+  fill: #44c0aa;
+}
+
+.category-list__link:active {
+  color: rgba($paper-color, 0.3);
+}
+
+.category-list__text {
+  width: 150px;
+}
+
+@media (min-width: $tablet) {
+  .category-list__link {
+    font-size: 20px;
+    line-height: 30px;
+    width: 334px;
+    box-sizing: border-box;
+    padding-top: 28px;
+    padding-right: 37px;
+    padding-left: 35px;
+    padding-bottom: 40px;
+  }
+
+  .category-list {
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+  }
+}

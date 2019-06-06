@@ -15,8 +15,45 @@
   padding-top: 25px;
   padding-bottom: 29px;
   padding-left: 45px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__item {
   border-bottom: 1px solid $trans-color;
+}
+
+@media (min-width: $tablet) {
+  .main-nav__list {
+    font-size: 15px;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 334px;
+    margin-right: 74px;
+  }
+
+  .main-nav__item {
+    border: none;
+  }
+
+  .main-nav__href {
+    width: 167px;
+    padding-left: 0;
+    padding-top: 18px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav__list {
+    width: 410px;
+    font-size: 17px;
+  }
 }
