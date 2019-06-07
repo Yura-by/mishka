@@ -53,7 +53,23 @@
 
 @media (min-width: $desktop) {
   .main-nav__list {
-    width: 410px;
+    width: 400px;
+    box-sizing: border-box;
     font-size: 17px;
+    margin-right: 0;
+  }
+
+  .main-nav__href {
+    padding-top: 31px;
+    padding-bottom: 33px;
+    width: 185px;
+  }
+
+  .main-nav__item--first {
+    border-right: 1px solid $trans-color;
+  }
+
+  .main-nav__item--last {
+    padding-left: 29px;
   }
 }

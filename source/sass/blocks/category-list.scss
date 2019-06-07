@@ -63,3 +63,13 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: $desktop) {
+  .category-list {
+  width: 1050px;
+  }
+
+  .category-list__link {
+    width: 525px;
+  }
+}

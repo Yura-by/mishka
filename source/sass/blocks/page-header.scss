@@ -190,16 +190,19 @@
     width: 149px;
     border-bottom: none;
     order: 1;
+    margin-right: 52px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .page-header__nav {
     order: 0;
+    margin-right: 49px;
+    display: flex;
   }
 
   .page-header__form {
     order: 2;
-    width: 400px;
-    border-bottom: none;
   }
 
   .page-header__stock {
@@ -208,5 +211,19 @@
 
   .page-header__delivery {
     order: 4;
+  }
+
+  .page-header__title {
+    font-size: 53px;
+    line-height: 57px;
+    width: 710px;
+    margin-top: 112px;
+    margin-bottom: 358px;
+  }
+
+  .page-header::after {
+    height: 50px;
+    background-size: 1250px 40px;
+    background-position: bottom -9px left -50px;
   }
 }

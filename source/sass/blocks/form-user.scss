@@ -1,7 +1,3 @@
-.form-user__search {
-  @include p-default;
-}
-
 .form-user__input {
   font-size: 14px;
   line-height: 24px;
@@ -133,5 +129,18 @@
 
   .form-user__svg-wrap {
     margin-right: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form-user {
+    width: 400px;
+    border-bottom: none;
+    box-sizing: border-box;
+    padding-left: 50px;
+  }
+
+  .form-user__label {
+    padding-right: 31px;
   }
 }
