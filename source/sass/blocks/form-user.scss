@@ -118,7 +118,7 @@
     border-bottom: none;
     border-right: 1px solid $trans-color;
     border-left: 1px solid $trans-color;
-    width: 85px;
+    padding-right: 32px;
     box-sizing: border-box;
   }
 
@@ -132,6 +132,14 @@
   }
 }
 
+@media (min-width: $tablet) and (max-width: 1149px) {
+  .form-user__input--modify {
+    display: block;
+    width: 165px;
+    box-sizing: border-box;
+  }
+}
+
 @media (min-width: $desktop) {
   .form-user {
     width: 400px;
@@ -140,7 +148,14 @@
     padding-left: 50px;
   }
 
-  .form-user__label {
-    padding-right: 31px;
+  .form-user__input--modify {
+    display: block;
+    width: 165px;
+    box-sizing: border-box;
+  }
+
+  .page-header__form--modify {
+    padding-left: 0;
+    width: 520px;
   }
 }
