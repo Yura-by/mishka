@@ -13,3 +13,14 @@ togglemenu.addEventListener("click", function(evt) {
     togglemenu.classList.add("page-header__button--open");
   }
 })
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (header.classList.contains("page-header--open")) {
+      evt.preventDefault();
+      togglemenu.classList.remove("page-header__button--close");
+      togglemenu.classList.add("page-header__button--open");
+      header.classList.remove("page-header--open");
+    }
+  }
+})

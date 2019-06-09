@@ -35,7 +35,13 @@
     display: flex;
     flex-wrap: wrap;
     width: 334px;
-    margin-right: 74px;
+    margin-right: 79px;
+  }
+
+  .main-nav {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .main-nav__item {
@@ -50,6 +56,11 @@
 }
 
 @media (min-width: $desktop) {
+  .main-nav {
+    display: block;
+    width: auto;
+  }
+
   .main-nav__list {
     width: 400px;
     box-sizing: border-box;
