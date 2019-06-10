@@ -83,24 +83,30 @@
         <div class="product-wrapper">
           <h2 class="product__title">Вязаные корзинки</h2>
           <b class="product__lid">Товар недели</b>
-          <p class="product__description">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-          </p>
-          <table class="product__table">
-            <tr class="product__row product__row--title">
-              <th class="product__data">Цвет:</th>
-              <th class="product__data">Диаметр:</th>
-              <th class="product__data">Высота:</th>
-            </tr>
-            <tr class="product__row product__row--value">
-              <td class="product__data">«Тиффани»/серый</td>
-              <td class="product__data">25 см</td>
-              <td class="product__data">15 см</td>
-            </tr>
-          </table>
-          <img class="product__image" src="img/triple-set-mobile.jpg" alt="Вязаные корзинки">
-          <p class="product__price">Цена: 990 руб.</p>
-          <button class="product__order button" type="button">Заказать</button>
+          <div class="product__column">
+            <p class="product__description">
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            </p>
+            <table class="product__table">
+              <tr class="product__row product__row--title">
+                <th class="product__data">Цвет:</th>
+                <th class="product__data">Диаметр:</th>
+                <th class="product__data">Высота:</th>
+              </tr>
+              <tr class="product__row product__row--value">
+                <td class="product__data">«Тиффани»/серый</td>
+                <td class="product__data">25 см</td>
+                <td class="product__data">15 см</td>
+              </tr>
+            </table>
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg">
+              <img class="product__image" src="img/triple-set-mobile.jpg" alt="Вязаные корзинки">
+            </picture>
+            <p class="product__price">Цена: 990 руб.</p>
+            <button class="product__order button" type="button">Заказать</button>
+          </div>
         </div>
       </section>
 

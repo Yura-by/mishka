@@ -66,10 +66,52 @@
   margin-bottom: 24px;
 }
 
-.product__price  {
+.product__price {
   @include p-default;
   font-family: $bold;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
+  margin-bottom: 26px;
+}
+
+.product {
+  padding-bottom: 43px;
+  background-image: url("../../img/zigzag-line-desktop-product.svg");
+  background-repeat: repeat-x;
+  background-position: left -10px bottom 0;
+  background-size: 350px auto;
+}
+
+@media (min-width: $tablet) {
+  .product__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 49px;
+  }
+
+  .product__lid {
+    line-height: 17px;
+    position: absolute;
+    right: 7px;
+    top: 40px;
+    width: 115px;
+    text-align: center;
+  }
+
+  .product-wrapper {
+    width: 670px;
+    position: relative;
+    padding-top: 34px;
+  }
+
+  .product__description {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 38px;
+  }
+
+  .product__column {
+    width: 290px;
+  }
 }
