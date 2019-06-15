@@ -1,0 +1,38 @@
+.copyright:active {
+  opacity: 0.3;
+}
+
+.copyright {
+  display: flex;
+  width: 260px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(229, 229, 229, 1);
+  font-family: $bold;
+  font-size: 19px;
+  line-height: 19px;
+  color: $contrast-color;
+  box-sizing: border-box;
+  padding-top: 22px;
+  padding-left: 38px;
+
+  &::active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo {
+  @include p-default;
+}
+
+.copyright__text {
+  margin-top: 5px;
+  margin-right: 29px;
+}
+
+@media (min-width: $tablet) {
+  .copyright {
+    margin: 0;
+    padding-left: 0;
+    border-top: none;
+  }
+}

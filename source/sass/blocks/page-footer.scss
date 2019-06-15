@@ -1,0 +1,48 @@
+.page-footer__logo {
+  display: none;
+
+  &:hover,
+  &:focus {
+    fill: $main-color;
+  }
+
+  &:active {
+    fill: $main-color;
+    opacity: 0.3;
+  }
+}
+
+.page-footer {
+  padding-top: 10px;
+  background-color: $trans-color;
+  padding-bottom: 19px;
+}
+
+@media (min-width: $tablet) {
+  .page-footer__logo {
+    display: block;
+    margin-top: 16px;
+    margin-right: 143px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    width: 670px;
+    margin: 0 auto;
+  }
+
+  .page-footer {
+    padding-top: 35px;
+    padding-bottom: 45px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer__wrapper {
+    width: 1050px;
+  }
+
+  .page-footer__logo {
+    margin-right: 333px;
+  }
+}

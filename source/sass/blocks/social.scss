@@ -1,0 +1,68 @@
+.social {
+  @include ul-default;
+  width: 180px;
+  height: 55px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.social__link {
+  & .socail__icon {
+    fill: #221f1f;
+  }
+
+  &:hover .socail__icon,
+  &:focus .socail__icon,
+  &:active .socail__icon {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__item {
+  width: 60px;
+  height: 100
+}
+
+.social__link {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+.socail__icon {
+  position: absolute;
+}
+
+.socail__icon--insta {
+  top: 20px;
+  left: 17px;
+}
+
+.socail__icon--facebook {
+  top: 15px;
+  left: 19px;
+}
+
+.socail__icon--twitter {
+  top: 20px;
+  left: 15px;
+}
+
+@media (min-width: $tablet) {
+  .social {
+    margin: 0;
+    margin-top: 8px;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .social {
+    margin-right: 250px
+  }
+}

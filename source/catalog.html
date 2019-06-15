@@ -119,21 +119,37 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html">
-        <svg class="page-footer__svg"></svg>
-      </a>
-      <ul class="page-footer_social social-list">
-        <li class="social__item"><a class="social__link social__link--instagramm" href="https://www.instagram.com"><span class="visually-hidden">Инстаграмм</span></a>
-        </li>
-        <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com"><span class="visually-hidden">Фэйсбук</span></a>
-        </li>
-        <li class="social__item"><a class="social__link social__link--twitter" href="https://twitter.com"><span class="visually-hidden">Твиттер</span></a>
-        </li>
-      </ul>
-      <p class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-        <svg class="copyright__image"></svg>
-      </p>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <svg class="page-footer__svg" width="102" height="34" aria-label="Логотип Мишка"><use xlink:href="#sprite-logo-footer"></use></svg>
+        </a>
+        <ul class="page-footer_social social">
+          <li class="social__item">
+            <a class="social__link social__link--instagramm" href="https://www.instagram.com">
+              <span class="visually-hidden">Инстаграмм</span>
+              <svg class="socail__icon socail__icon--insta" aria-label="Ссылка на Инстаграмм" width="22" height="21"><use xlink:href="#sprite-insta"></use></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com">
+              <span class="visually-hidden">Фэйсбук</span>
+              <svg class="socail__icon socail__icon--facebook" aria-label="Ссылка на Фейсбук" width="15" height="28"><use xlink:href="#sprite-fb"></use></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com">
+              <span class="visually-hidden">Твиттер</span>
+              <svg class="socail__icon socail__icon--twitter" aria-label="Ссылка на Твиттер" width="23" height="20"><use xlink:href="#sprite-twitter"></use></svg>
+            </a>
+          </li>
+        </ul>
+        <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">Разработано</span>
+          <p class="copyright__logo">
+            <img class="copyright__image" src="../../img/htmlacademy.svg" width="27" height="34" alt="Логотип академии">
+          </p>
+        </a>
+      </div>
     </footer>
 
     <section class="popup">
