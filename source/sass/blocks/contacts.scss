@@ -1,0 +1,55 @@
+.contacts__title {
+  @include p-default;
+  font-family: $bold;
+  font-size: 18px;
+  line-height: 30px;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.contacts {
+  padding-top: 37px;
+}
+
+.contacts__list {
+  width: 260px;
+  margin: 0 auto;
+  line-height: 30px;
+  margin-bottom: 36px;
+}
+
+.contacts__method {
+  margin-right: 30px;
+}
+
+.contacts__item {
+  @include p-default;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.contacts__value--adress {
+  padding-right: 25px;
+}
+
+.contacts__map {
+  @include p-default;
+  height: 457px;
+  background-image:  url("../../img/map-pin.svg"), url("../../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left calc(50% + 11px) top 147px, left 50%  top 0;
+  margin-bottom: 40px;
+  background-size: 67px auto, 320px auto;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .contacts__map {
+    background-image:  url("../../img/map-pin.svg"), url("../../img/map-mobile@2x.jpg");
+  }
+}
+
+.contacts__write-us {
+  margin: 0 auto;
+  font-size: 18px;
+}

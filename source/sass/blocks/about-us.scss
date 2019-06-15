@@ -1,0 +1,133 @@
+.about-us__title {
+  @include p-default;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.about-us {
+  font-family: $bold;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 27px;
+}
+
+.about-us__list {
+  @include ul-default;
+  font-size: 17px;
+}
+
+.about-us__item {
+  padding-top: 55px;
+  margin-bottom: 28px;
+  padding-right: 10px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 50px;
+    background-repeat: no-repeat;
+  }
+}
+.about-us__item--material::before {
+  background-image: url("../../img/icon-1.svg");
+  background-position: top 0 left 8px;
+}
+
+.about-us__item--stile::before {
+  background-image: url("../../img/icon-3.svg");
+  background-position: top 2px left 0;
+}
+
+.about-us__item--likes::before {
+  background-image: url("../../img/icon-5.svg");
+  background-position: top 7px left 7px;
+}
+
+.about-us__item--love::before {
+  background-image: url("../../img/icon-2.svg");
+  background-position: top 4px left 4px;
+}
+
+.about-us__item--country::before {
+  background-image: url("../../img/icon-4.svg");
+  background-position: top 4px left 0;
+  left: -6px;
+}
+
+.about-us__item--box::before {
+  background-image: url("../../img/icon-6.svg");
+  background-position: top 4px left 4px;
+}
+
+@media (min-width: $tablet) {
+  .about-us {
+    width: 668px;
+    padding-top: 49px;
+}
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 48px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__item {
+    padding-top: 55px;
+    margin-bottom: 28px;
+    padding-right: 0;
+    width: 334px;
+    margin-bottom: 55px;
+  }
+
+  .about-us__item--material {
+    order: 0;
+  }
+
+  .about-us__item--love {
+    order: 1;
+  }
+
+  .about-us__item--stile {
+    order: 2;
+  }
+
+  .about-us__item--country {
+    order: 3;
+  }
+
+  .about-us__item--likes {
+    order: 4;
+  }
+
+  .about-us__item--box {
+    order: 5;
+  }
+}
+
+@media (min-width: $desktop) {
+  .about-us {
+    width: 700px;
+    padding-top: 62px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 48px;
+  }
+
+  .about-us__item {
+    width: 350px;
+  }
+}

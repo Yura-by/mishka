@@ -1,0 +1,133 @@
+.reviews__title {
+  @include p-default;
+  font-family: $bold;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 23px;
+}
+
+.reviews__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 28px;
+  position: relative;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  @include p-default;
+  line-height: 30px;
+  margin-bottom: 28px;
+}
+
+.reviews__author {
+  font-family: $bold;
+  font-size: 17px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.reviews__nick {
+  display: block;
+  font-family: $regular;
+  margin-top: 5px;
+}
+
+.reviews__item {
+  margin-bottom: 32px;
+}
+
+.reviews {
+  padding-bottom: 50px;
+  background-image: url("../../img/zigzag-line-desktop-product.svg");
+  background-repeat: repeat-x;
+  background-position: left -10px bottom 0;
+  background-size: 330px auto;
+}
+
+.reviews__link {
+  font-size: 18px;
+}
+
+@media (min-width: $tablet) {
+  .reviews__wrapper {
+    width: 668px;
+    padding-top: 106px;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 49px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    margin-bottom: 58px;
+  }
+
+  .reviews__author {
+    font-size: 18px;
+  }
+
+  .reviews__nick {
+    font-size: 17px;
+  }
+
+  .reviews__inner {
+    display: flex;
+  }
+
+  .reviews__link {
+    position: absolute;
+    width: 175px;
+    top: 108px;
+    right: 0;
+  }
+
+  .reviews {
+    padding-bottom: 105px;
+    background-image: url("../../img/zigzag-line-desktop-product.svg"), url("../../img/review.jpg");
+    background-repeat: repeat-x, no-repeat;
+    background-position: left -10px bottom 0, left calc(50% - 209px) top 30px;
+    background-size: 800px auto, 350px auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .reviews {
+    width: 1050px;
+    margin: 0 auto;
+    padding-left: 175px;
+    box-sizing: border-box;
+    background-position: left -10px bottom 0, left 0 top 35px;
+    padding-bottom: 160px;
+    background-size: 1100px auto, 350px auto;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__wrapper {
+    width: 875px;
+    margin: 0;
+  }
+
+  .reviews__link {
+    top: 114px;
+  }
+
+  .reviews__text {
+    width: 800px;
+    margin-bottom: 38px;
+  }
+
+  .reviews__author {
+    font-size: 17px;
+  }
+}

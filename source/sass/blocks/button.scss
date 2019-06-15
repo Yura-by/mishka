@@ -9,4 +9,18 @@
   padding-top: 14px;
   padding-bottom: 14px;
   box-sizing: border-box;
+  display: block;
+  color: $contrast-color;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(68, 68, 68, 1);
+    color: $paper-color;
+  }
+
+  &:active {
+    background-color: rgba(68, 68, 68, 1);
+    color: rgba($paper-color, 0.3);
+  }
 }
