@@ -152,30 +152,34 @@
       </div>
     </footer>
 
-    <section class="popup">
-      <h2 class="popup__titile">Добавить в корзину</h2>
-      <p class="popup__text">Выберите размер:</p>
-      <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="popup__fieldset">
-          <legend class="popup__legend"><span class="visually-hidden">Выберите размер</span></legend>
-          <div class="popup__fielset-wrap">
-            <p class="popup__item">
-              <input class="visually-hidden" id="popup__input--s" type="radio" name="size" value="s" checked>
-              <label class="popup__label" for="popup__input--s">s</label>
-            </p>
-            <p class="popup__item">
-              <input class="visually-hidden" id="popup__input--m" type="radio" name="size" value="m">
-              <label class="popup__label" for="popup__input--m">m</label>
-            </p>
-            <p class="popup__item">
-              <input class="visually-hidden" id="popup__input--l" type="radio" name="size" value="l">
-              <label class="popup__label" for="popup__input--l">l</label>
-            </p>
-          </div>
-        </fieldset>
-        <button class="popup__submit button">Добавить</button>
-      </form>
-    </section>
+    <div class="wrapper">
+      <section class="popup">
+        <div class="popup__wrapper">
+          <h2 class="popup__titile">Добавить в корзину</h2>
+          <p class="popup__text">Выберите размер:</p>
+          <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="popup__fieldset">
+              <legend class="popup__legend"><span class="visually-hidden">Выберите размер</span></legend>
+              <div class="popup__fielset-wrap">
+                <p class="popup__item">
+                  <input class="popup__input visually-hidden" id="popup__input--s" type="radio" name="size" value="s" checked>
+                  <label class="popup__label" for="popup__input--s">s</label>
+                </p>
+                <p class="popup__item">
+                  <input class="popup__input visually-hidden" id="popup__input--m" type="radio" name="size" value="m">
+                  <label class="popup__label" for="popup__input--m">m</label>
+                </p>
+                <p class="popup__item">
+                  <input class="popup__input visually-hidden" id="popup__input--l" type="radio" name="size" value="l">
+                  <label class="popup__label" for="popup__input--l">l</label>
+                </p>
+              </div>
+            </fieldset>
+            <button class="popup__submit button" type="button">Добавить</button>
+          </form>
+        </div>
+      </section>
+    </div>
 
     <script src="js/search.js"></script>
     <script src="js/menu.js"></script>

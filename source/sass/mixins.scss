@@ -13,3 +13,9 @@
 @mixin p-default {
   margin: 0;
 }
+
+@mixin fieldset-default {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
