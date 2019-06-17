@@ -70,15 +70,19 @@
       <section class="catalog">
         <h2 class="visually-hidden">Перечень таваров</h2>
         <figure class="catalog__item catalog__item--hare">
-          <a class="catalog__link" href="#">
-            <img class="catalog__image" src="img/photo-1-mobile.jpg" alt="Зайчик попрыгайчик">
+          <a class="catalog__link-img" href="#">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg">
+              <img class="catalog__image" src="img/photo-1-mobile@1x.jpg" alt="Зайчик попрыгайчик">
+            </picture>
           </a>
           <figcaption class="catalog__description">
             <h3 class="catalog__subtitle"><a class="catalog__link" href="#">Зайчик-попрыгайчик</a></h3>
             <p class="catalog__text">Рост 30 см, вес 200 г</p>
             <p class="catalog__price">
               <span class="catalog__space">1</span>200 руб.
-              <button class="catalog__basket" type="button">
+              <button class="catalog__basket catalog__basket--one" type="button">
                 <span class="visually-hidden">Корзина</span>
                 <svg class="catalog__icon" width="20" height="19"><use xlink:href="#sprite-cart"></use></svg>
               </button>
@@ -86,14 +90,18 @@
           </figcaption>
         </figure>
         <figure class="catalog__item catalog__item--cart">
-          <a class="catalog__link" href="#">
-            <img class="catalog__image" src="img/photo-2-mobile.jpg" alt="Зайчик попрыгайчик">
+          <a class="catalog__link-img" href="#">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg">
+              <img class="catalog__image" src="img/photo-2-mobile@1x.jpg" alt="Зайчик попрыгайчик">
+            </picture>
           </a>
           <figcaption class="catalog__description">
             <h3 class="catalog__subtitle"><a class="catalog__link" href="#">Корзинка для белья</a></h3>
             <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
             <p class="catalog__price">690 руб.
-              <button class="catalog__basket" type="button">
+              <button class="catalog__basket catalog__basket--two" type="button">
                 <span class="visually-hidden">Корзина</span>
                 <svg class="catalog__icon" width="20" height="19"><use xlink:href="#sprite-cart"></use></svg>
               </button>
@@ -101,14 +109,18 @@
           </figcaption>
         </figure>
         <figure class="catalog__item catalog__item--big-hare">
-          <a class="catalog__link" href="#">
-            <img class="catalog__image" src="img/photo-3-mobile.jpg" alt="Зайчик попрыгайчик">
+          <a class="catalog__link-img" href="#">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg">
+              <img class="catalog__image" src="img/photo-3-mobile@1x.jpg" alt="Зайчик попрыгайчик">
+            </picture>
           </a>
           <figcaption class="catalog__description">
             <h3 class="catalog__subtitle"><a class="catalog__link" href="#">Большая корзинка для игрушек</a></h3>
             <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
             <p class="catalog__price"><span class="catalog__space">1</span>500 руб.
-              <button class="catalog__basket" type="button">
+              <button class="catalog__basket catalog__basket--three" type="button">
                 <span class="visually-hidden">Корзина</span>
                 <svg class="catalog__icon" width="20" height="19"><use xlink:href="#sprite-cart"></use></svg>
               </button>
@@ -194,24 +206,7 @@
     <script src="js/search.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/bg-card.js"></script>
-    <script>
-      var openpopupin = document.querySelector(".catalog__basket");
-      var popup = document.querySelector(".wrapper");
-
-      openpopupin.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popup.classList.add("wrapper--show");
-      })
-
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          if (popup.classList.contains("wrapper--show")) {
-            evt.preventDefault();
-            popup.classList.remove("wrapper--show");
-          }
-        }
-      })
-    </script>
+    <script src="js/popup-catalog.js"></script>
 
   </body>
 

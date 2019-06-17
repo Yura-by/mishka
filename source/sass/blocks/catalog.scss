@@ -92,3 +92,45 @@
 .catalog__space {
   margin-right: 4px;
 }
+
+@media (min-width: $tablet) {
+  .catalog__item {
+    width: 668px;
+    display: flex;
+    padding-bottom: 0;
+    border: 1px solid rgba(236, 236, 236, 1);;
+    margin-bottom: 52px;
+  }
+
+  .catalog {
+    padding-top: 69px;
+  }
+
+  .catalog__link {
+    font-size: 20px;
+  }
+
+  .catalog__text {
+    font-size: 15px;
+  }
+
+  .catalog__price {
+    font-size: 17px;
+    padding-bottom: 27px;
+    padding-left: 5px;
+    margin-top: auto;
+  }
+
+  .catalog__description {
+    display: flex;
+    flex-direction: column;
+    width: 274px;
+    margin: 0;
+    padding-top: 26px;
+    margin-left: 27px;
+  }
+
+  .catalog__image {
+    margin-bottom: 0;
+  }
+}
