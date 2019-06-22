@@ -1,0 +1,85 @@
+.phone__input::placeholder {
+  font-size: 19px;
+  line-height: 19px;
+  color: rgba(69, 69, 69, 1);
+  opacity: 0.3;
+}
+
+.phone__input {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  padding-bottom: 17px;
+  padding-top: 13px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  background-image: url("../../img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: right 7px top 7px;
+
+  &:hover,
+  &:focus {
+    border-bottom-color: $main-color;
+    background-image: url("../../img/phone2.svg");
+  }
+
+  &:active {
+    border-bottom-color: $main-color;
+    background-image: url("../../img/phone2.svg");
+  }
+}
+
+.phone__input:active::placeholder {
+    opacity: 1;
+}
+
+.phone__title {
+  margin-bottom: 10px;
+}
+
+.phone {
+  margin-bottom: 32px;
+}
+
+@media (min-width: $tablet) {
+  .phone__title {
+    padding-top: 13px;
+  }
+
+  .phone {
+    background-color: $trans-color;
+    width: 100%;
+    padding-top: 53px;
+    margin-bottom: 0;
+  }
+
+  .phone__value {
+    width: 500px;
+  }
+
+  .phone__input {
+    background-color: $trans-color;
+    padding-left: 17px;
+    background-position: right 25px top 7px;
+  }
+
+  .phone__wrapper {
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .phone__wrapper {
+    width: 1050px;
+  }
+
+  .phone__value {
+    width: 700px;
+  }
+
+  .phone__input {
+    background-position: right 9px top 7px;
+  }
+}

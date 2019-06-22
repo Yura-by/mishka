@@ -1,0 +1,58 @@
+.additionally__title {
+  margin-bottom: 25px;
+}
+
+.additionally__textarea {
+  border: 2px solid rgba(68, 68, 68, 1);
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(199, 199, 199, 1);
+  width: 100%;
+  height: 142px;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-left: 14px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $main-color;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 1);
+  }
+}
+
+.additionally__value {
+  @include p-default;
+}
+
+.additionally {
+  margin-bottom: 12px;
+}
+
+@media (min-width: $tablet) {
+  .additionally {
+    padding-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .additionally__textarea {
+    width: 500px;
+    height: 142px;
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .additionally__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .additionally__textarea {
+    width: 700px;
+  }
+}

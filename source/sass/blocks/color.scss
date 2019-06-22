@@ -1,0 +1,95 @@
+.color__label {
+  position: relative;
+  padding-top: 11px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 35px;
+    border: 2px solid rgba(68, 68, 68, 1);
+  }
+}
+
+.color__input:hover ~ .color__label::before,
+.color__input:focus ~ .color__label::before {
+  border-color: $main-color;
+}
+
+.color__input:active ~ .color__label::before {
+  border-color: rgba(199, 199, 199, 1);
+}
+
+.color__input:checked ~ .color__label::before {
+  background-image: url("../../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.color__title {
+  margin-bottom: 25px;
+}
+
+.color__value {
+  margin-bottom: 32px;
+}
+
+.color {
+  margin-bottom: 10px;
+}
+
+@media (min-width: $tablet) {
+  .color {
+    width: auto;
+    background-color: $trans-color;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+  }
+
+  .color__wrapper {
+    width: 668px;
+    margin: 0 auto;
+    padding-top: 48px;
+  }
+
+  .color__label::before {
+    width: 50px;
+    height: 48px;
+  }
+
+  .color__label {
+    padding-top: 15px;
+  }
+
+  .color__input:checked ~ .color__label::before {
+    background-size: 33px 22px;
+  }
+
+  .color__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .color__value {
+    width: 240px;
+    margin-bottom: 42px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .color__wrapper {
+    width: 1050px;
+    padding-top: 51px;
+  }
+
+  .color__value {
+    width: 262px;
+  }
+
+  .color__inner {
+    justify-content: flex-start;
+  }
+}

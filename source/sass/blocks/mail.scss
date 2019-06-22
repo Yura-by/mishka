@@ -1,0 +1,92 @@
+.mail__input::placeholder {
+  font-size: 17px;
+  line-height: 19px;
+  color: rgba(69, 69, 69, 1);
+  opacity: 0.3;
+}
+
+.mail__input {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  padding-bottom: 17px;
+  padding-top: 6px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  background-image: url("../../img/mail.svg");
+  background-repeat: no-repeat;
+  background-position: right 3px top 7px;
+
+  &:hover,
+  &:focus {
+    border-bottom-color: $main-color;
+    background-image: url("../../img/mail2.svg");
+  }
+
+  &:active {
+    border-bottom-color: $main-color;
+    background-image: url("../../img/mail2.svg");
+  }
+}
+
+.mail__input:active::placeholder {
+    opacity: 1;
+}
+
+.mail__title {
+  margin-bottom: 10px;
+}
+
+.mail {
+  margin-bottom: 17px;
+}
+
+@media (min-width: $tablet) {
+  .mail {
+    width: auto;
+    background-color: $trans-color;
+    padding-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 34px;
+  }
+
+  .mail__wrapper {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .mail__title {
+    padding-top: 20px;
+  }
+
+  .mail__input::placeholder {
+    font-size: 18px;
+  }
+
+  .mail__input {
+    width: 100%;
+    background-color: $trans-color;
+    padding-left: 18px;
+    background-position: right 20px top 5px;
+  }
+
+  .mail__value {
+    width: 500px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .mail__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .mail__value {
+    width: 700px;
+  }
+
+  .mail__input {
+    background-position: right 4px top 5px
+  }
+}

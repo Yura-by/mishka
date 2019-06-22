@@ -1,0 +1,34 @@
+.order__text {
+  @include p-default;
+  font-size: 13px;
+  line-height: 24px;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 23px;
+  margin-bottom: 23px;
+}
+
+.order {
+  margin-bottom: 55px;
+}
+
+@media (min-width: $tablet) {
+  .order__text {
+    width: 668px;
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 62px;
+    margin-bottom: 57px;
+  }
+
+  .order {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .order__text {
+    width: 700px;
+    padding-top: 112px;
+  }
+}

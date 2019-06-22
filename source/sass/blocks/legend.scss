@@ -1,0 +1,40 @@
+.legend {
+  @include p-default;
+  font-family: $bold;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $main-color;
+  display: flex;
+
+  &::after {
+    content: "";
+    width: 1px;
+    height: 1px;
+    flex-grow: 1;
+    background-color: $main-color;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 28px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .legend {
+    width: 167px;
+    padding-top: 16px;
+    flex-shrink: 0;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .legend {
+    width: 175px;
+    padding-left: 65px;
+    box-sizing: border-box;
+  }
+}

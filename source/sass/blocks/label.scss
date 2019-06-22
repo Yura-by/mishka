@@ -1,0 +1,16 @@
+.label {
+  font-family: $bold;
+  font-size: 17px;
+  line-height: 18px;
+  display: block;
+  padding-left: 63px;
+  user-select: none;
+}
+
+@media (min-width: $tablet) {
+  .label {
+    font-size: 19px;
+    line-height: 19px;
+    padding-left: 80px;
+  }
+}

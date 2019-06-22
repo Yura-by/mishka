@@ -1,0 +1,80 @@
+.type__label  {
+  position: relative;
+  padding-top: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid rgba(68, 68, 68, 1);
+  }
+}
+
+.type__title {
+  margin-bottom: 25px;
+}
+
+.type__input:hover ~ .type__label::before,
+.type__input:focus ~ .type__label::before {
+  border-color: $main-color;
+}
+
+.type__input:active ~ .type__label::before {
+  opacity: 0.3;
+}
+
+.type__input:checked ~ .type__label::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 16px;
+  height: 16px;
+  background-color: $main-color;
+  border-radius: 50%;
+}
+
+.type__value {
+  margin-bottom: 14px;
+}
+
+.type {
+  margin-bottom: 28px;
+}
+
+@media (min-width: $tablet) {
+  .type__label:before {
+    width: 48px;
+    height: 48px;
+  }
+
+  .type__input:checked ~ .type__label::after {
+    left: 16px;
+    top: 16px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .type__label {
+    padding-top: 15px;
+  }
+
+  .type__value {
+    margin-bottom: 42px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .type__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .type {
+    margin-bottom: 25px;
+  }
+}

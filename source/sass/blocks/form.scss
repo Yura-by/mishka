@@ -1,0 +1,61 @@
+.form__item {
+  @include fieldset-default;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.form__complete {
+  @include p-default;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 31px;
+}
+
+.form__bottom-wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet) {
+  .form__wrapper {
+    display: flex;
+  }
+
+  .form__item {
+    width: 668px;
+  }
+
+  .form__bottom-wrapper {
+    width: 668px;
+    display: flex;
+    padding-top: 49px;
+    align-items: baseline;
+  }
+
+  .form__complete {
+    order: 1;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 0;
+    width: 302px;
+    margin-left: auto;
+  }
+
+  .form__submit {
+    line-height: 17px;
+    width: 230px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form__item {
+    width: auto;
+  }
+
+  .form__bottom-wrapper {
+    width: 700px;
+    padding-top: 44px;
+  }
+}

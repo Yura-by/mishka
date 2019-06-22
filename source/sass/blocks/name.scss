@@ -1,0 +1,89 @@
+.name__input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 1);
+  opacity: 0.3;
+}
+
+.name__label {
+  padding-left: 0;
+  margin-bottom: 9px;
+}
+
+.name__title {
+  margin-bottom: 28px;
+}
+
+.name__input {
+  padding: 0;
+  border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  width: 100%;
+  padding-bottom: 17px;
+  padding-top: 7px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom-color: $main-color;
+  }
+}
+
+.name__value {
+  margin-bottom: 22px;
+}
+
+.name {
+  margin-bottom: 9px;
+}
+
+@media (min-width: $tablet) {
+  .name__input::placeholder {
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  .name__inner {
+    width: 500px;
+  }
+
+  .name__value {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 33px;
+  }
+
+  .name__input {
+    width: 200px;
+    flex-grow: 1;
+    padding-left: 16px;
+  }
+
+  .name__label {
+    margin-right: 25px;
+  }
+
+  .name__title {
+    padding-top: 6px;
+    margin-bottom: 0;
+  }
+
+  .name__wrapper {
+    padding-top: 61px;
+  }
+
+  .name {
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .name__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .name__inner {
+    width: 700px;
+  }
+}
