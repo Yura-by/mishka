@@ -4,7 +4,8 @@
 
 .copyright {
   display: flex;
-  width: 260px;
+  justify-content: center;
+  width: 81%;
   margin: 0 auto;
   border-top: 1px solid rgba(229, 229, 229, 1);
   font-family: $bold;
@@ -13,7 +14,6 @@
   color: $contrast-color;
   box-sizing: border-box;
   padding-top: 22px;
-  padding-left: 38px;
 
   &::active {
     opacity: 0.3;
@@ -34,5 +34,8 @@
     margin: 0;
     padding-left: 0;
     border-top: none;
+    width: 222px;
+    display: flex;
+    justify-content: flex-end;
   }
 }

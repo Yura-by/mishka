@@ -26,12 +26,13 @@
   .page-footer__logo {
     display: block;
     margin-top: 16px;
-    margin-right: 143px;
+    width: 222px;
   }
 
   .page-footer__wrapper {
     display: flex;
-    width: 670px;
+    justify-content: space-between;
+    width: 87%;
     margin: 0 auto;
   }
 
@@ -44,9 +45,5 @@
 @media (min-width: $desktop) {
   .page-footer__wrapper {
     width: 1050px;
-  }
-
-  .page-footer__logo {
-    margin-right: 333px;
   }
 }
