@@ -6,7 +6,7 @@
 }
 
 .product-wrapper {
-  width: 260px;
+  width: 81%;
   margin: 0 auto;
   padding-top: 28px;
 }
@@ -63,7 +63,10 @@
 
 .product__image {
   display: block;
+  margin: 0 auto;
   margin-bottom: 24px;
+  width: 100%;
+  max-width: 420px;
 }
 
 .product__price {
@@ -81,6 +84,10 @@
   background-repeat: repeat-x;
   background-position: left -10px bottom 0;
   background-size: 350px auto;
+}
+
+.product__order {
+  width: 100%;
 }
 
 @media (min-width: $tablet) {
@@ -102,7 +109,7 @@
   }
 
   .product-wrapper {
-    width: 670px;
+    width: 87%;
     position: relative;
     padding-top: 34px;
   }
@@ -121,6 +128,8 @@
     position: absolute;
     right: 0;
     top: 141px;
+    width: auto;
+    max-width: 100%;
   }
 
   .product__price {

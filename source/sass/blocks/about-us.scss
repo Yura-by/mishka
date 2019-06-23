@@ -7,7 +7,7 @@
 
 .about-us {
   font-family: $bold;
-  width: 260px;
+  width: 81%;
   margin: 0 auto;
   padding-top: 27px;
 }
@@ -66,7 +66,7 @@
 
 @media (min-width: $tablet) {
   .about-us {
-    width: 668px;
+    width: 87%;
     padding-top: 49px;
 }
   .about-us__title {
@@ -78,6 +78,7 @@
   .about-us__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     font-size: 20px;
     line-height: 22px;
   }
