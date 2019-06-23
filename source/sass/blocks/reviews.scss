@@ -7,7 +7,7 @@
 }
 
 .reviews__wrapper {
-  width: 260px;
+  width: 81%;
   margin: 0 auto;
   padding-top: 28px;
   position: relative;
@@ -50,11 +50,12 @@
 
 .reviews__link {
   font-size: 18px;
+  width: 100%;
 }
 
 @media (min-width: $tablet) {
   .reviews__wrapper {
-    width: 668px;
+    width: 87%;
     padding-top: 106px;
   }
 
@@ -92,7 +93,7 @@
     padding-bottom: 105px;
     background-image: url("../../img/zigzag-line-desktop-product.svg"), url("../../img/review.jpg");
     background-repeat: repeat-x, no-repeat;
-    background-position: left -10px bottom 0, left calc(50% - 209px) top 30px;
+    background-position: left -10px bottom 0, left 0 top 30px;
     background-size: 800px auto, 350px auto;
   }
 }

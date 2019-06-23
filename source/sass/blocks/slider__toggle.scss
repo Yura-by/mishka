@@ -1,7 +1,9 @@
 .slider__toggle {
   @include p-default;
   display: flex;
+  margin: 0 auto;
   margin-bottom: 38px;
+  width: 260px;
 }
 
 .slider__button {
