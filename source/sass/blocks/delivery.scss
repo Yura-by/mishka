@@ -8,8 +8,9 @@
 
 @media (min-width: $tablet) {
   .delivery {
-    display: block;
-    padding-left: 25px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
     padding-top: 17px;
     width: 40%;
   }
@@ -20,5 +21,7 @@
     width: 50%;
     border-top: 1px solid $trans-color;
     padding-left: 293px;
+    justify-content: flex-start;
+    padding-right: 0;
   }
 }
