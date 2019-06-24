@@ -46,6 +46,16 @@
   margin-bottom: 28px;
 }
 
+.type__wrapper {
+  display: flex;
+}
+
+.type__inner {
+  width: 334px;
+  margin-left: auto;
+  margin-right: 22vw;
+}
+
 @media (min-width: $tablet) {
   .type__label:before {
     width: 48px;

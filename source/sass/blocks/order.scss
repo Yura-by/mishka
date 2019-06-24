@@ -2,7 +2,7 @@
   @include p-default;
   font-size: 13px;
   line-height: 24px;
-  width: 260px;
+  width: 81%;
   margin: 0 auto;
   padding-top: 23px;
   margin-bottom: 23px;
@@ -14,7 +14,7 @@
 
 @media (min-width: $tablet) {
   .order__text {
-    width: 668px;
+    width: 87%;
     font-size: 17px;
     line-height: 30px;
     padding-top: 62px;

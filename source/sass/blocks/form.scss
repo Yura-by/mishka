@@ -1,6 +1,6 @@
 .form__item {
   @include fieldset-default;
-  width: 260px;
+  width: 81%;
   margin: 0 auto;
 }
 
@@ -12,8 +12,12 @@
 }
 
 .form__bottom-wrapper {
-  width: 260px;
+  width: 81%;
   margin: 0 auto;
+}
+
+.form__submit {
+  width: 100%;
 }
 
 @media (min-width: $tablet) {
@@ -22,7 +26,7 @@
   }
 
   .form__item {
-    width: 668px;
+    width: 87%;
   }
 
   .form__bottom-wrapper {
