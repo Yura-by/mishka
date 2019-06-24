@@ -99,7 +99,8 @@
 
 @media (min-width: $tablet) {
   .catalog__item {
-    width: 668px;
+    width: 87%;
+    justify-content: space-between;
     max-width: none;
     display: flex;
     padding-bottom: 0;
@@ -132,7 +133,7 @@
     width: 274px;
     margin: 0;
     padding-top: 26px;
-    margin-left: 27px;
+    margin-right: 33px;
   }
 
   .catalog__image {
@@ -170,6 +171,8 @@
   .catalog__description {
     width: 255px;
     flex-grow: 1;
+    margin-right: 0;
+    margin-left: 26px;
   }
 
   .catalog__price {
