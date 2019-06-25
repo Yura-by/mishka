@@ -52,7 +52,7 @@
   }
 
   .mail__wrapper {
-    width: 668px;
+    width: 87%;
     margin: 0 auto;
   }
 
@@ -71,8 +71,8 @@
     background-position: right 20px top 5px;
   }
 
-  .mail__value {
-    width: 500px;
+  .mail__inner {
+    flex-grow: 1;
   }
 }
 

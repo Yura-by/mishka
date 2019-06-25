@@ -34,10 +34,16 @@
 
 .color__value {
   margin-bottom: 32px;
+  width: 260px;
 }
 
 .color {
   margin-bottom: 10px;
+}
+
+.color__inner {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (min-width: $tablet) {
@@ -49,7 +55,7 @@
   }
 
   .color__wrapper {
-    width: 668px;
+    width: 87%;
     margin: 0 auto;
     padding-top: 48px;
   }
@@ -68,9 +74,10 @@
   }
 
   .color__inner {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: auto;
+    width: 500px;
+    flex-grow: 1;
   }
 
   .color__value {

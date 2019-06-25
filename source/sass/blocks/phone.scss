@@ -54,10 +54,6 @@
     margin-bottom: 0;
   }
 
-  .phone__value {
-    width: 500px;
-  }
-
   .phone__input {
     background-color: $trans-color;
     padding-left: 17px;
@@ -65,8 +61,12 @@
   }
 
   .phone__wrapper {
-    width: 668px;
+    width: 87%;
     margin: 0 auto;
+  }
+
+  .phone__inner {
+    flex-grow: 1;
   }
 }
 

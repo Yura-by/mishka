@@ -45,6 +45,7 @@
 
   .name__inner {
     width: 500px;
+    flex-grow: 1;
   }
 
   .name__value {
@@ -85,5 +86,6 @@
 
   .name__inner {
     width: 700px;
+    flex-grow: 0;
   }
 }

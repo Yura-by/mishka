@@ -46,16 +46,6 @@
   margin-bottom: 28px;
 }
 
-.type__wrapper {
-  display: flex;
-}
-
-.type__inner {
-  width: 334px;
-  margin-left: auto;
-  margin-right: 22vw;
-}
-
 @media (min-width: $tablet) {
   .type__label:before {
     width: 48px;
@@ -76,6 +66,16 @@
   .type__value {
     margin-bottom: 42px;
   }
+
+  .type__inner {
+    width: 334px;
+    margin-left: auto;
+    margin-right: 22vw;
+  }
+
+  .type__wrapper {
+    display: flex;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -86,5 +86,11 @@
 
   .type {
     margin-bottom: 25px;
+  }
+
+  .type__inner {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
