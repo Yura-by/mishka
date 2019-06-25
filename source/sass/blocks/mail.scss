@@ -14,19 +14,19 @@
   padding-top: 6px;
   padding-right: 20px;
   box-sizing: border-box;
-  background-image: url("../../img/mail.svg");
+  background-image: url("../img/mail.svg");
   background-repeat: no-repeat;
   background-position: right 3px top 7px;
 
   &:hover,
   &:focus {
     border-bottom-color: $main-color;
-    background-image: url("../../img/mail2.svg");
+    background-image: url("../img/mail2.svg");
   }
 
   &:active {
     border-bottom-color: $main-color;
-    background-image: url("../../img/mail2.svg");
+    background-image: url("../img/mail2.svg");
   }
 }
 

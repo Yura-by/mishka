@@ -23,7 +23,7 @@
 }
 
 .color__input:checked ~ .color__label::before {
-  background-image: url("../../img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
