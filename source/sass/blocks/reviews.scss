@@ -91,10 +91,16 @@
 
   .reviews {
     padding-bottom: 105px;
-    background-image: url("../img/zigzag-line-desktop-product.svg"), url("../img/review.jpg");
+    background-image: url("../img/zigzag-line-desktop-product.svg"), url("../img/review@1x.jpg");
     background-repeat: repeat-x, no-repeat;
     background-position: left -10px bottom 0, left 0 top 30px;
     background-size: 800px auto, 350px auto;
+  }
+
+  @media(min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .reviews {
+      background-image: url("../img/zigzag-line-desktop-product.svg"), url("../img/review@2x.jpg");
+    }
   }
 }
 
