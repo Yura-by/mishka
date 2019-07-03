@@ -43,15 +43,15 @@
           <div class="form-user__top-wrap">
             <p class="form-user__search">
               <label class="form-user__label" for="form-user__input">
-                <svg class="form-user__icon-search" aria-label="Поиск по сайту" width="18" height="18"><use xlink:href="#sprite-search"></use></svg>
+                <svg class="form-user__icon-search" role="img" aria-labelledby="heading" focusable="false" width="18" height="18"><title id="heading">Поиск по сайту</title><use xlink:href="#sprite-search"></use></svg>
               </label>
               <input class="form-user__input" id="form-user__input" type="search" placeholder="Поиск по сайту">
             </p>
           </div>
           <div class="form-user__bottom-wrap">
-            <a class="form-user__basket">
+            <a class="form-user__basket" href="#">
               <p class="form-user__svg-wrap">
-              <svg class="form-user__icon-basket" aria-label="Корзина" width="21" height="18"><use xlink:href="#sprite-cart"></use></svg></p>Корзина: пока пуста
+              <svg class="form-user__icon-basket" aria-hidden="true" role="presentation" focusable="false" width="21" height="18"><use xlink:href="#sprite-cart"></use></svg></p>Корзина: пока пуста
             </a>
           </div>
         </form>
@@ -185,25 +185,26 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
-          <svg class="page-footer__svg" width="102" height="34" aria-label="Логотип Мишка"><use xlink:href="#sprite-logo-footer"></use></svg>
+          <span class="visually-hidden">Логотип Мишки</span>
+          <svg class="page-footer__svg" role="img" width="102" height="34" aria-label="Логотип Мишка"><use xlink:href="#sprite-logo-footer"></use></svg>
         </a>
         <ul class="page-footer_social social">
           <li class="social__item">
             <a class="social__link social__link--instagramm" href="https://www.instagram.com">
               <span class="visually-hidden">Инстаграмм</span>
-              <svg class="socail__icon socail__icon--insta" aria-label="Ссылка на Инстаграмм" width="22" height="21"><use xlink:href="#sprite-insta"></use></svg>
+              <svg class="socail__icon socail__icon--insta" role="img" width="22" height="21"><use xlink:href="#sprite-insta"></use></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com">
               <span class="visually-hidden">Фэйсбук</span>
-              <svg class="socail__icon socail__icon--facebook" aria-label="Ссылка на Фейсбук" width="15" height="28"><use xlink:href="#sprite-fb"></use></svg>
+              <svg class="socail__icon socail__icon--facebook" role="img" width="15" height="28"><use xlink:href="#sprite-fb"></use></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com">
               <span class="visually-hidden">Твиттер</span>
-              <svg class="socail__icon socail__icon--twitter" aria-label="Ссылка на Твиттер" width="23" height="20"><use xlink:href="#sprite-twitter"></use></svg>
+              <svg class="socail__icon socail__icon--twitter" role="img" width="23" height="20"><use xlink:href="#sprite-twitter"></use></svg>
             </a>
           </li>
         </ul>
