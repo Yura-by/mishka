@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Вещи, которые создают уют вашего дома.">
     <title>Mishka</title>
+    <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans-light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="img/favicon16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="img/favicon32.png" sizes="32x32" type="image/png">
@@ -171,7 +175,7 @@
             </p>
           </div>
         </div>
-        <p class="contacts__map">
+        <p class="contacts__map" aria-label="Интерактивная карта">
           <!--<script class="contacts__script" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af13798924f53ce3f068090ce0c070bc215218fbf2abfb87d0d8809c7c3650127&amp;width=100%;height=457&amp;lang=ru_RU&amp;scroll=true"></script>-->
         </p>
         <a class="contacts__write-us button" href="#">Напишите нам</a>
@@ -244,7 +248,7 @@
 
     <script src="js/search.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/popup.js"></script>
+    <script src="js/popup.js" async></script>
 
   </body>
 </html>
