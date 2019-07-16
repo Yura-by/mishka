@@ -1,14 +1,17 @@
 .form__item {
-  @include fieldset-default;
   width: 81%;
   margin: 0 auto;
+
+  @include fieldset-default;
 }
 
 .form__complete {
-  @include p-default;
   font-size: 14px;
   line-height: 16px;
+
   margin-bottom: 31px;
+
+  @include p-default;
 }
 
 .form__bottom-wrapper {
@@ -30,23 +33,28 @@
   }
 
   .form__bottom-wrapper {
-    width: 87%;
     display: flex;
+
+    width: 87%;
     padding-top: 49px;
+
     align-items: baseline;
   }
 
   .form__complete {
-    order: 1;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 0;
+
     width: 302px;
+    margin-bottom: 0;
     margin-left: auto;
+
+    order: 1;
   }
 
   .form__submit {
     line-height: 17px;
+
     width: 230px;
     padding-top: 15px;
     padding-bottom: 16px;

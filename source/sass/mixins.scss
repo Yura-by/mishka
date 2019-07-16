@@ -1,13 +1,15 @@
 @mixin btn-default {
-	padding: 0;
-	border: 0;
-	background-color: transparent;
+  padding: 0;
+
+  border: 0;
+  background-color: transparent;
 }
 
 @mixin ul-default {
   margin: 0;
   padding: 0;
-  list-style: none
+
+  list-style: none;
 }
 
 @mixin p-default {
@@ -17,5 +19,6 @@
 @mixin fieldset-default {
   margin: 0;
   padding: 0;
+
   border: none;
 }

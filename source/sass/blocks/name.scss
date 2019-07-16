@@ -1,13 +1,14 @@
 .name__input::placeholder {
   font-size: 17px;
   line-height: 18px;
-  color: rgba(68, 68, 68, 1);
+
   opacity: 0.3;
+  color: rgba(68, 68, 68, 1);
 }
 
 .name__label {
-  padding-left: 0;
   margin-bottom: 9px;
+  padding-left: 0;
 }
 
 .name__title {
@@ -15,12 +16,13 @@
 }
 
 .name__input {
+  width: 100%;
   padding: 0;
+  padding-top: 7px;
+  padding-bottom: 17px;
+
   border: 0;
   border-bottom: 2px solid rgba(0, 0, 0, 1);
-  width: 100%;
-  padding-bottom: 17px;
-  padding-top: 7px;
 
   &:hover,
   &:focus,
@@ -45,19 +47,23 @@
 
   .name__inner {
     width: 500px;
+
     flex-grow: 1;
   }
 
   .name__value {
     display: flex;
-    align-items: baseline;
+
     margin-bottom: 33px;
+
+    align-items: baseline;
   }
 
   .name__input {
     width: 200px;
-    flex-grow: 1;
     padding-left: 16px;
+
+    flex-grow: 1;
   }
 
   .name__label {
@@ -65,8 +71,8 @@
   }
 
   .name__title {
-    padding-top: 6px;
     margin-bottom: 0;
+    padding-top: 6px;
   }
 
   .name__wrapper {
@@ -86,6 +92,7 @@
 
   .name__inner {
     width: 700px;
+
     flex-grow: 0;
   }
 }

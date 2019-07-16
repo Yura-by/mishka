@@ -1,25 +1,28 @@
 @font-face {
   font-family: "Open Sans Bold";
-  src: url("../fonts/opensans-bold.woff2") format("woff2"), url("../fonts/opensans-bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+
   font-display: swap;
+  src: url("../fonts/opensans-bold.woff2") format("woff2"), url("../fonts/opensans-bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensans-regular.woff2") format("woff2"), url("../fonts/opensans-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+
   font-display: swap;
+  src: url("../fonts/opensans-regular.woff2") format("woff2"), url("../fonts/opensans-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans Light";
-  src: url("../fonts/opensans-light.woff2") format("woff2"), url("../fonts/opensans-light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+
   font-display: swap;
+  src: url("../fonts/opensans-light.woff2") format("woff2"), url("../fonts/opensans-light.woff") format("woff");
 }
 
 a {
@@ -32,25 +35,30 @@ img {
 }
 
 body {
-  min-width: 320px;
-  margin: 0;
   font-family: $regular;
   font-size: 15px;
-  line-height: 20px;
   font-weight: normal;
   font-style: normal;
+  line-height: 20px;
+
+  min-width: 320px;
+  margin: 0;
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
+
   overflow: hidden;
   clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
+
   white-space: nowrap;
+
   border: 0;
 }

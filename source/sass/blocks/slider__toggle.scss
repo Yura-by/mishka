@@ -1,17 +1,20 @@
 .slider__toggle {
-  @include p-default;
   display: flex;
+
+  width: 260px;
   margin: 0 auto;
   margin-bottom: 38px;
-  width: 260px;
+
+  @include p-default;
 }
 
 .slider__button {
+  box-sizing: boder-box;
   width: 130px;
   height: 52px;
-  box-sizing: boder-box;
-  background-color: transparent;
+
   border: 1px solid $trans-color;
+  background-color: transparent;
 
   &:hover,
   &:focus {
@@ -24,9 +27,9 @@
 }
 
 .slider__button--prev {
+  border-right: none;
   background-image: url("../img/huge-arrow-left.svg");
   background-repeat: no-repeat;
-  border-right: none;
   background-position: top 50% left 47%;
 }
 
@@ -41,11 +44,13 @@
     position: absolute;
     right: 0;
     bottom: -39px;
+
     width: 160px;
   }
 
   .slider__button {
     width: 80px;
+
     border: none;
   }
 

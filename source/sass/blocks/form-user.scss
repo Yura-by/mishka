@@ -1,7 +1,9 @@
 .form-user__input {
   font-size: 14px;
   line-height: 24px;
+
   padding: 5px 5px;
+
   border: 2px solid transparent;
 }
 
@@ -9,6 +11,7 @@
   font-family: $bold;
   font-size: 17px;
   line-height: 24px;
+
   color: $contrast-color;
 }
 
@@ -16,12 +19,15 @@
   font-family: $bold;
   font-size: 17px;
   line-height: 24px;
-  color: $contrast-color;
+
   display: flex;
+
   width: 260px;
   margin: 0 auto;
   padding-top: 27px;
   padding-bottom: 24px;
+
+  color: $contrast-color;
 }
 
 .form-user__icon-search {
@@ -38,19 +44,22 @@
 }
 
 .form-user__search {
-  @include p-default;
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid $trans-color;
+
+  box-sizing: border-box;
   width: 260px;
   margin: 0 auto;
-  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid $trans-color;
+
+  @include p-default;
 }
 
 .form-user__label {
-  padding-top: 10px;
   margin-right: 20px;
+  padding-top: 10px;
 }
 
 .form-user__top-wrap {
@@ -85,17 +94,20 @@
 }
 
 .form-user__svg-wrap {
-  @include p-default;
-  padding-top: 3px;
   margin-right: 24px;
+  padding-top: 3px;
+
+  @include p-default;
 }
 
 @media (min-width: $tablet) {
   .form-user {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 24px;
+
     box-sizing: border-box;
+    padding-right: 24px;
+
+    justify-content: flex-end;
   }
 
   .form-user__input {
@@ -103,8 +115,9 @@
   }
 
   .form-user__search {
-    border-bottom: none;
     width: auto;
+
+    border-bottom: none;
   }
 
   .form-user__bottom-wrap {
@@ -118,11 +131,12 @@
   }
 
   .form-user__top-wrap {
-    border-bottom: none;
-    border-right: 1px solid $trans-color;
-    border-left: 1px solid $trans-color;
-    padding-right: 32px;
     box-sizing: border-box;
+    padding-right: 32px;
+
+    border-right: 1px solid $trans-color;
+    border-bottom: none;
+    border-left: 1px solid $trans-color;
   }
 
   .form-user__basket {
@@ -138,31 +152,35 @@
 @media (min-width: $tablet) and (max-width: 1149px) {
   .form-user__input--modify {
     display: block;
-    width: 165px;
+
     box-sizing: border-box;
+    width: 165px;
   }
 }
 
 @media (min-width: $desktop) {
   .form-user {
-    width: 400px;
-    border-bottom: none;
     box-sizing: border-box;
-    padding-left: 50px;
-    justify-content: flex-start;
+    width: 400px;
     padding-right: 0;
+    padding-left: 50px;
+
+    border-bottom: none;
+
+    justify-content: flex-start;
   }
 
   .form-user__input--modify {
     display: block;
-    width: 165px;
+
     box-sizing: border-box;
+    width: 165px;
     margin-left: 5px;
     padding-top: 10px;
   }
 
   .page-header__form--modify {
-    padding-left: 0;
     width: 520px;
+    padding-left: 0;
   }
 }

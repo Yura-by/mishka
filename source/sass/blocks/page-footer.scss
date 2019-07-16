@@ -1,9 +1,7 @@
 .page-footer__logo {
-  fill: rgba(35, 31, 32, 1);
-}
-
-.page-footer__logo {
   display: none;
+
+  fill: rgba(35, 31, 32, 1);
 
   &:hover,
   &:focus {
@@ -11,29 +9,34 @@
   }
 
   &:active {
-    fill: $main-color;
     opacity: 0.3;
+
+    fill: $main-color;
   }
 }
 
 .page-footer {
   padding-top: 10px;
-  background-color: $trans-color;
   padding-bottom: 19px;
+
+  background-color: $trans-color;
 }
 
 @media (min-width: $tablet) {
   .page-footer__logo {
     display: block;
-    margin-top: 16px;
+
     width: 222px;
+    margin-top: 16px;
   }
 
   .page-footer__wrapper {
     display: flex;
-    justify-content: space-between;
+
     width: 87%;
     margin: 0 auto;
+
+    justify-content: space-between;
   }
 
   .page-footer {

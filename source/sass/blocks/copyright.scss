@@ -1,21 +1,21 @@
-.copyright:active {
-  opacity: 0.3;
-}
-
 .copyright {
-  display: flex;
-  justify-content: center;
-  width: 81%;
-  margin: 0 auto;
-  border-top: 1px solid rgba(229, 229, 229, 1);
   font-family: $bold;
   font-size: 19px;
   line-height: 19px;
-  color: $contrast-color;
+
+  display: flex;
+
   box-sizing: border-box;
+  width: 81%;
+  margin: 0 auto;
   padding-top: 22px;
 
-  &::active {
+  color: $contrast-color;
+  border-top: 1px solid rgba(229, 229, 229, 1);
+
+  justify-content: center;
+
+  &:active {
     opacity: 0.3;
   }
 }
@@ -31,11 +31,14 @@
 
 @media (min-width: $tablet) {
   .copyright {
+    display: flex;
+
+    width: 222px;
     margin: 0;
     padding-left: 0;
+
     border-top: none;
-    width: 222px;
-    display: flex;
+
     justify-content: flex-end;
   }
 }

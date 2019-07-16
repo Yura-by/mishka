@@ -6,13 +6,16 @@
   font-family: $bold;
   font-size: 19px;
   line-height: 24px;
-  color: $paper-color;
-  display: block;
+
+  display: flex;
+
   width: 81%;
   margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 17px;
-  display: flex;
+
+  color: $paper-color;
+
   justify-content: space-between;
 }
 
@@ -29,7 +32,7 @@
 }
 
 .category-list__link:hover .category-list__icon,
-.category-list__link:focus .category-list__icon  {
+.category-list__link:focus .category-list__icon {
   fill: #29a592;
 }
 
@@ -49,16 +52,18 @@
   .category-list__link {
     font-size: 20px;
     line-height: 30px;
-    width: 100%;
+
     box-sizing: border-box;
+    width: 100%;
     padding-top: 28px;
     padding-right: 37px;
-    padding-left: 35px;
     padding-bottom: 40px;
+    padding-left: 35px;
   }
 
   .category-list {
     display: flex;
+
     width: 87%;
     margin: 0 auto;
   }
@@ -70,7 +75,7 @@
 
 @media (min-width: $desktop) {
   .category-list {
-  width: 1050px;
+    width: 1050px;
   }
 
   .category-list__link {

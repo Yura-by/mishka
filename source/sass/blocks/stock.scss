@@ -1,29 +1,36 @@
 .stock {
-  @include ul-default;
   display: none;
+
+  @include ul-default;
 }
 
 @media (min-width: $desktop) {
   .stock {
     display: flex;
+
+    box-sizing: border-box;
+    width: 50%;
+    padding-right: 86px;
+
+    border-top: 1px solid $trans-color;
+
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 50%;
-    box-sizing: border-box;
-    border-top: 1px solid $trans-color;
-    padding-right: 86px;
   }
 
   .stock__item {
-    width: 220px;
     display: flex;
+
+    width: 220px;
   }
 
   .stock__link {
     font-family: $bold;
     line-height: 24px;
-    color: $contrast-color;
+
     padding-top: 18px;
+
+    color: $contrast-color;
 
     &:hover,
     &:focus {

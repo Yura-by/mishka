@@ -1,47 +1,52 @@
 .reviews__title {
-  @include p-default;
   font-family: $bold;
   font-size: 25px;
   line-height: 30px;
+
   margin-bottom: 23px;
+
+  @include p-default;
 }
 
 .reviews__wrapper {
+  position: relative;
+
   width: 81%;
   margin: 0 auto;
   padding-top: 28px;
-  position: relative;
-}
-
-.reviews__item {
-  margin: 0;
 }
 
 .reviews__text {
-  @include p-default;
   line-height: 30px;
+
   margin-bottom: 28px;
+
+  @include p-default;
 }
 
 .reviews__author {
   font-family: $bold;
   font-size: 17px;
-  line-height: 24px;
   font-style: normal;
+  line-height: 24px;
 }
 
 .reviews__nick {
-  display: block;
   font-family: $regular;
+
+  display: block;
+
   margin-top: 5px;
 }
 
 .reviews__item {
+  margin: 0;
   margin-bottom: 32px;
 }
 
 .reviews {
   padding-bottom: 50px;
+
   background-image: url("../img/zigzag-line-desktop-product.svg");
   background-repeat: repeat-x;
   background-position: left -10px bottom 0;
@@ -50,6 +55,7 @@
 
 .reviews__link {
   font-size: 18px;
+
   width: 100%;
 }
 
@@ -62,11 +68,13 @@
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
+
     margin-bottom: 49px;
   }
 
   .reviews__text {
     font-size: 17px;
+
     margin-bottom: 58px;
   }
 
@@ -84,20 +92,22 @@
 
   .reviews__link {
     position: absolute;
-    width: 175px;
     top: 108px;
     right: 0;
+
+    width: 175px;
   }
 
   .reviews {
     padding-bottom: 105px;
+
     background-image: url("../img/zigzag-line-desktop-product.svg"), url("../img/review@1x.jpg");
     background-repeat: repeat-x, no-repeat;
     background-position: left -10px bottom 0, left 0 top 30px;
     background-size: 800px auto, 350px auto;
   }
 
-  @media(min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .reviews {
       background-image: url("../img/zigzag-line-desktop-product.svg"), url("../img/review@2x.jpg");
     }
@@ -106,12 +116,13 @@
 
 @media (min-width: $desktop) {
   .reviews {
+    box-sizing: border-box;
     width: 1050px;
     margin: 0 auto;
-    padding-left: 175px;
-    box-sizing: border-box;
-    background-position: left -10px bottom 0, left 0 top 35px;
     padding-bottom: 160px;
+    padding-left: 175px;
+
+    background-position: left -10px bottom 0, left 0 top 35px;
     background-size: 1100px auto, 350px auto;
   }
 

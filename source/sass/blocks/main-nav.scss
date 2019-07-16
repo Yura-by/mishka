@@ -1,19 +1,22 @@
 .main-nav__list {
-  @include ul-default;
   font-family: $bold;
   font-size: 17px;
   line-height: 24px;
+
+  @include ul-default;
 }
 
 .main-nav__href {
   display: block;
+
+  box-sizing: border-box;
   width: 260px;
   margin: 0 auto;
-  color: $contrast-color;
-  box-sizing: border-box;
   padding-top: 25px;
   padding-bottom: 29px;
   padding-left: 45px;
+
+  color: $contrast-color;
 
   &:hover,
   &:focus {
@@ -32,15 +35,19 @@
 @media (min-width: $tablet) {
   .main-nav__list {
     font-size: 15px;
+
     display: flex;
-    flex-wrap: wrap;
+
     width: 334px;
+
+    flex-wrap: wrap;
   }
 
   .main-nav {
-    width: 60%;
     display: flex;
+
     box-sizing: border-box;
+    width: 60%;
     padding-left: 49px;
   }
 
@@ -50,29 +57,31 @@
 
   .main-nav__href {
     width: 167px;
-    padding-left: 0;
     padding-top: 18px;
+    padding-left: 0;
   }
 }
 
 @media (min-width: $desktop) {
   .main-nav {
     display: block;
+
     width: auto;
     padding-left: 0;
   }
 
   .main-nav__list {
-    width: 400px;
-    box-sizing: border-box;
     font-size: 17px;
+
+    box-sizing: border-box;
+    width: 400px;
     margin-right: 0;
   }
 
   .main-nav__href {
+    width: 185px;
     padding-top: 31px;
     padding-bottom: 33px;
-    width: 185px;
   }
 
   .main-nav__item--first {

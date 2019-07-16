@@ -1,14 +1,22 @@
 .social {
-  @include ul-default;
+  display: flex;
+
   width: 56%;
   height: 55px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 15px;
+
+  @include ul-default;
+  justify-content: space-between;
 }
 
 .social__link {
+  position: relative;
+
+  display: block;
+
+  height: 100%;
+
   & .socail__icon {
     fill: #221f1f;
   }
@@ -26,13 +34,7 @@
 
 .social__item {
   width: 60px;
-  height: 100
-}
-
-.social__link {
-  display: block;
-  height: 100%;
-  position: relative;
+  height: 100;
 }
 
 .socail__icon {
@@ -56,9 +58,10 @@
 
 @media (min-width: $tablet) {
   .social {
+    width: 222px;
     margin: 0;
     margin-top: 8px;
-    width: 222px;
+
     justify-content: center;
   }
 }

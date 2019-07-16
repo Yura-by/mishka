@@ -1,19 +1,21 @@
 .phone__input::placeholder {
   font-size: 19px;
   line-height: 19px;
-  color: rgba(69, 69, 69, 1);
+
   opacity: 0.3;
+  color: rgba(69, 69, 69, 1);
 }
 
 .phone__input {
+  box-sizing: border-box;
   width: 100%;
   padding: 0;
-  border: 0;
-  border-bottom: 2px solid rgba(0, 0, 0, 1);
-  padding-bottom: 17px;
   padding-top: 13px;
   padding-right: 20px;
-  box-sizing: border-box;
+  padding-bottom: 17px;
+
+  border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
   background-image: url("../img/phone.svg");
   background-repeat: no-repeat;
   background-position: right 7px top 7px;
@@ -31,7 +33,7 @@
 }
 
 .phone__input:active::placeholder {
-    opacity: 1;
+  opacity: 1;
 }
 
 .phone__title {
@@ -48,15 +50,17 @@
   }
 
   .phone {
-    background-color: $trans-color;
     width: 100%;
-    padding-top: 53px;
     margin-bottom: 0;
+    padding-top: 53px;
+
+    background-color: $trans-color;
   }
 
   .phone__input {
-    background-color: $trans-color;
     padding-left: 17px;
+
+    background-color: $trans-color;
     background-position: right 25px top 7px;
   }
 

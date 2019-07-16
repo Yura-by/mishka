@@ -1,21 +1,28 @@
 .legend {
-  @include p-default;
   font-family: $bold;
   font-size: 17px;
   line-height: 17px;
-  text-transform: uppercase;
-  color: $main-color;
+
   display: flex;
 
+  text-transform: uppercase;
+
+  color: $main-color;
+
+  @include p-default;
+
   &::after {
-    content: "";
     width: 1px;
     height: 1px;
-    flex-grow: 1;
-    background-color: $main-color;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 28px;
+
+    content: "";
+
+    background-color: $main-color;
+
+    flex-grow: 1;
   }
 }
 
@@ -23,9 +30,10 @@
   .legend {
     width: 167px;
     padding-top: 16px;
+
     flex-shrink: 0;
 
-    &:after {
+    &::after {
       display: none;
     }
   }
@@ -33,8 +41,8 @@
 
 @media (min-width: $desktop) {
   .legend {
+    box-sizing: border-box;
     width: 175px;
     padding-left: 65px;
-    box-sizing: border-box;
   }
 }

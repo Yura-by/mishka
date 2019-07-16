@@ -1,19 +1,21 @@
 .mail__input::placeholder {
   font-size: 17px;
   line-height: 19px;
-  color: rgba(69, 69, 69, 1);
+
   opacity: 0.3;
+  color: rgba(69, 69, 69, 1);
 }
 
 .mail__input {
+  box-sizing: border-box;
   width: 100%;
   padding: 0;
-  border: 0;
-  border-bottom: 2px solid rgba(0, 0, 0, 1);
-  padding-bottom: 17px;
   padding-top: 6px;
   padding-right: 20px;
-  box-sizing: border-box;
+  padding-bottom: 17px;
+
+  border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
   background-image: url("../img/mail.svg");
   background-repeat: no-repeat;
   background-position: right 3px top 7px;
@@ -31,7 +33,7 @@
 }
 
 .mail__input:active::placeholder {
-    opacity: 1;
+  opacity: 1;
 }
 
 .mail__title {
@@ -45,10 +47,11 @@
 @media (min-width: $tablet) {
   .mail {
     width: auto;
-    background-color: $trans-color;
-    padding-top: 20px;
     margin-bottom: 0;
+    padding-top: 20px;
     padding-bottom: 34px;
+
+    background-color: $trans-color;
   }
 
   .mail__wrapper {
@@ -66,8 +69,9 @@
 
   .mail__input {
     width: 100%;
-    background-color: $trans-color;
     padding-left: 18px;
+
+    background-color: $trans-color;
     background-position: right 20px top 5px;
   }
 
@@ -87,6 +91,6 @@
   }
 
   .mail__input {
-    background-position: right 4px top 5px
+    background-position: right 4px top 5px;
   }
 }

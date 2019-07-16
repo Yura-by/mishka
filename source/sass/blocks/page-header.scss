@@ -1,12 +1,13 @@
 .page-header {
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: left 50% bottom 133px;
-  background-repeat: no-repeat;
   position: relative;
+
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 133px;
   background-size: 575px auto;
 }
 
-@media(min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .page-header {
     background-image: url("../img/hero-mobile@2x.jpg");
   }
@@ -17,18 +18,21 @@
 }
 
 .page-header__top-wrap {
+  position: relative;
+
   padding-top: 22px;
   padding-bottom: 23px;
-  position: relative;
-  background-color: $paper-color;
+
   border-bottom: 1px solid $trans-color;
+  background-color: $paper-color;
 }
 
 .page-header__logo {
   display: block;
-  margin: 0 auto;
+
   width: 86px;
   height: 35px;
+  margin: 0 auto;
 
   &:hover,
   &:focus {
@@ -41,14 +45,17 @@
 }
 
 .page-header__button {
-  @include btn-default;
   position: absolute;
   top: 29px;
   left: 50%;
-  margin-left: 109px;
+
   width: 21px;
   height: 20px;
+  margin-left: 109px;
+
   cursor: pointer;
+
+  @include btn-default;
 
   &:hover,
   &:focus {
@@ -63,41 +70,50 @@
 .page-header__button--close {
   &::before,
   &::after {
-    content: "";
     position: absolute;
+
     width: 28px;
     height: 3px;
+
+    content: "";
+
     background-color: $contrast-color;
   }
 
   &::before {
-    transform: rotate(45deg);
     top: 8px;
     left: -4px;
+
+    transform: rotate(45deg);
   }
 
   &::after {
-    transform: rotate(-45deg);
     top: 8px;
     right: -3px;
+
+    transform: rotate(-45deg);
   }
 }
 
 .page-header__button--open {
   &::before {
-    content: "";
     position: absolute;
-    width: 20px;
-    height: 2px;
-    background-color: $contrast-color;
     top: 2px;
     right: 1px;
+
+    width: 20px;
+    height: 2px;
+
+    content: "";
+
+    background-color: $contrast-color;
     box-shadow: 0 6px 0 0 $contrast-color, 0 12px 0 0 $contrast-color;
   }
 }
 
 .page-header__img {
   display: block;
+
   width: 86px;
   height: 35px;
 }
@@ -106,11 +122,13 @@
   font-family: $bold;
   font-size: 27px;
   line-height: 30px;
+
   width: 260px;
   margin: 0 auto;
-  text-align: center;
   margin-top: 70px;
   margin-bottom: 122px;
+
+  text-align: center;
 }
 
 .page-header--inner .page-header__title {
@@ -118,6 +136,7 @@
   margin: 0;
   padding-top: 70px;
   padding-bottom: 75px;
+
   background-color: $trans-color;
 }
 
@@ -130,8 +149,8 @@
   .page-header__logo {
     width: 113px;
     height: 46px;
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
   }
 
   .page-header__button {
@@ -140,12 +159,9 @@
 
   .page-header__grid-wrap {
     display: flex;
+
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .page-header__form {
-    order: 1;
   }
 
   .page-header__nav {
@@ -157,22 +173,28 @@
   }
 
   .page-header__top-wrap {
-    width: 48%;
-    box-sizing: border-box;
-    border-bottom: 1px solid $trans-color;
-    padding-bottom: 20px;
     display: flex;
+
+    box-sizing: border-box;
+    width: 48%;
+    padding-bottom: 20px;
     padding-left: 48px;
+
+    border-bottom: 1px solid $trans-color;
   }
 
   .page-header__form {
     width: 52%;
+
     border-bottom: 1px solid $trans-color;
+
+    order: 1;
   }
 
-  .page-header__title  {
+  .page-header__title {
     font-size: 43px;
     line-height: 50px;
+
     width: 600px;
     margin-top: 82px;
     margin-bottom: 373px;
@@ -184,7 +206,7 @@
     background-size: 1148px auto;
   }
 
-  @media(min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .page-header {
       background-image: url("../img/hero-desktop@2x.jpg");
     }
@@ -208,12 +230,15 @@
   }
 
   .page-header::after {
-    content: "";
     position: absolute;
+    bottom: -1px;
+    left: 0;
+
     width: 100%;
     height: 24px;
-    left: 0px;
-    bottom: -1px;
+
+    content: "";
+
     background-image: url("../img/zigzag-line-desktop.svg");
     background-repeat: repeat-x;
     background-position: bottom -1px left 0;
@@ -244,19 +269,21 @@
 
   .page-header__top-wrap {
     width: 149px;
-    border-bottom: none;
-    order: 1;
     margin-right: 52px;
     padding-top: 8px;
-    padding-bottom: 8px;
     padding-right: 0;
+    padding-bottom: 8px;
     padding-left: 0;
+
+    border-bottom: none;
+
+    order: 1;
   }
 
   .page-header__top-wrap--modify {
     width: 149px;
-    padding-right: 0;
     margin-right: 0;
+    padding-right: 0;
   }
 
   .page-header--inner .page-header__nav {
@@ -264,9 +291,11 @@
   }
 
   .page-header__nav {
-    order: 0;
-    margin-right: 49px;
     display: flex;
+
+    margin-right: 49px;
+
+    order: 0;
   }
 
   .page-header__form {
@@ -284,6 +313,7 @@
   .page-header__title {
     font-size: 53px;
     line-height: 57px;
+
     width: 710px;
     margin-top: 112px;
     margin-bottom: 358px;
@@ -291,8 +321,9 @@
 
   .page-header::after {
     height: 50px;
-    background-size: 1250px 40px;
+
     background-position: bottom -9px left -50px;
+    background-size: 1250px 40px;
   }
 
   .page-header--inner .page-header__title {

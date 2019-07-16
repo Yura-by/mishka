@@ -1,11 +1,13 @@
 .order__text {
-  @include p-default;
   font-size: 13px;
   line-height: 24px;
+
   width: 81%;
   margin: 0 auto;
-  padding-top: 23px;
   margin-bottom: 23px;
+  padding-top: 23px;
+
+  @include p-default;
 }
 
 .order {
@@ -14,11 +16,12 @@
 
 @media (min-width: $tablet) {
   .order__text {
-    width: 87%;
     font-size: 17px;
     line-height: 30px;
-    padding-top: 62px;
+
+    width: 87%;
     margin-bottom: 57px;
+    padding-top: 62px;
   }
 
   .order {
