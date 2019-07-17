@@ -1,10 +1,9 @@
 .about-us__title {
+  @include p-default;
   font-size: 25px;
   line-height: 30px;
 
   margin-bottom: 30px;
-
-  @include p-default;
 }
 
 .about-us {
@@ -16,9 +15,8 @@
 }
 
 .about-us__list {
-  font-size: 17px;
-
   @include ul-default;
+  font-size: 17px;
 }
 
 .about-us__item {

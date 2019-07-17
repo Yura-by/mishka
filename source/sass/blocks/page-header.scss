@@ -45,6 +45,7 @@
 }
 
 .page-header__button {
+  @include btn-default;
   position: absolute;
   top: 29px;
   left: 50%;
@@ -54,8 +55,6 @@
   margin-left: 109px;
 
   cursor: pointer;
-
-  @include btn-default;
 
   &:hover,
   &:focus {

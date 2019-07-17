@@ -1,4 +1,5 @@
 .legend {
+  @include p-default;
   font-family: $bold;
   font-size: 17px;
   line-height: 17px;
@@ -8,8 +9,6 @@
   text-transform: uppercase;
 
   color: $main-color;
-
-  @include p-default;
 
   &::after {
     width: 1px;

@@ -43,13 +43,12 @@
 }
 
 .catalog__subtitle {
+  @include p-default;
   font-family: $bold;
   font-size: 17px;
   line-height: 24px;
 
   color: $contrast-color;
-
-  @include p-default;
 }
 
 .catalog__description {
@@ -62,15 +61,15 @@
 }
 
 .catalog__text {
+  @include p-default;
   font-size: 13px;
   line-height: 30px;
 
   margin-bottom: 19px;
-
-  @include p-default;
 }
 
 .catalog__price {
+  @include p-default;
   font-family: $bold;
   line-height: 24px;
 
@@ -79,8 +78,6 @@
   padding-top: 22px;
 
   border-top: 1px solid rgba(236, 236, 236, 1);
-
-  @include p-default;
 }
 
 .catalog__basket {

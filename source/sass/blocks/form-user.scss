@@ -44,6 +44,7 @@
 }
 
 .form-user__search {
+  @include p-default;
   display: flex;
 
   box-sizing: border-box;
@@ -53,8 +54,6 @@
   padding-bottom: 18px;
 
   border-bottom: 1px solid $trans-color;
-
-  @include p-default;
 }
 
 .form-user__label {
@@ -94,10 +93,9 @@
 }
 
 .form-user__svg-wrap {
+  @include p-default;
   margin-right: 24px;
   padding-top: 3px;
-
-  @include p-default;
 }
 
 @media (min-width: $tablet) {

@@ -1,11 +1,10 @@
 .reviews__title {
+  @include p-default;
   font-family: $bold;
   font-size: 25px;
   line-height: 30px;
 
   margin-bottom: 23px;
-
-  @include p-default;
 }
 
 .reviews__wrapper {
@@ -17,11 +16,10 @@
 }
 
 .reviews__text {
+  @include p-default;
   line-height: 30px;
 
   margin-bottom: 28px;
-
-  @include p-default;
 }
 
 .reviews__author {

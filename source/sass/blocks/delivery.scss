@@ -1,12 +1,11 @@
 .delivery {
+  @include p-default;
   line-height: 24px;
 
   display: none;
 
   box-sizing: border-box;
   width: 260px;
-
-  @include p-default;
 }
 
 @media (min-width: $tablet) {

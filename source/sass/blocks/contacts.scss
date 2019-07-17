@@ -1,4 +1,5 @@
 .contacts__title {
+  @include p-default;
   font-family: $bold;
   font-size: 18px;
   line-height: 30px;
@@ -6,8 +7,6 @@
   width: 81%;
   margin: 0 auto;
   margin-bottom: 25px;
-
-  @include p-default;
 }
 
 .contacts {
@@ -28,11 +27,10 @@
 }
 
 .contacts__item {
+  @include p-default;
   display: flex;
 
   margin-bottom: 30px;
-
-  @include p-default;
 }
 
 .contacts__value--adress {
@@ -40,6 +38,7 @@
 }
 
 .contacts__map {
+  @include p-default;
   height: 457px;
   margin-bottom: 40px;
 
@@ -47,8 +46,6 @@
   background-repeat: no-repeat, no-repeat;
   background-position: left calc(50% + 11px) top 147px, left 50%  top 0;
   background-size: 67px auto, 320px auto;
-
-  @include p-default;
 }
 
 .contacts__email {

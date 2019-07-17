@@ -1,7 +1,6 @@
 .stock {
-  display: none;
-
   @include ul-default;
+  display: none;
 }
 
 @media (min-width: $desktop) {

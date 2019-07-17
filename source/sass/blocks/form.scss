@@ -1,17 +1,15 @@
 .form__item {
+  @include fieldset-default;
   width: 81%;
   margin: 0 auto;
-
-  @include fieldset-default;
 }
 
 .form__complete {
+  @include p-default;
   font-size: 14px;
   line-height: 16px;
 
   margin-bottom: 31px;
-
-  @include p-default;
 }
 
 .form__bottom-wrapper {
