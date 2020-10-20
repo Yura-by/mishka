@@ -56,20 +56,14 @@
 
 .product__table tbody {
   display: flex;
+  width: 100%;
 }
 
 .product__row {
   display: flex;
+  width: 50%;
 
   flex-wrap: wrap;
-}
-
-.product__row--title {
-  width: 96px;
-}
-
-.product__row--value {
-  width: 164px;
 }
 
 .product__image {
